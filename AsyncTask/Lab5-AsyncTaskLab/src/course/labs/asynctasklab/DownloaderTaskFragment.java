@@ -33,13 +33,11 @@ public class DownloaderTaskFragment extends Fragment {
 		
 		// TODO: Retrieve arguments from DownloaderTaskFragment
 		// Prepare them for use with DownloaderTask. 
-		Integer res1 = getResources().getIdentifier("tswift","raw", mContext.getPackageName());
-        Integer res2 = getResources().getIdentifier("rblack","raw", mContext.getPackageName());
-        Integer res3 = getResources().getIdentifier("lgaga","raw", mContext.getPackageName());
+		ArrayList<Integer> ids = getArguments().getIntegerArrayList(MainActivity.TAG_FRIEND_RES_IDS);
 		
         
 		// TODO: Start the DownloaderTask 
-		dTask.execute(res1, res2, res3);
+		downloaderTask.execute(ids.toArray(new Integer[ids.size()]));
         
 
 	}
