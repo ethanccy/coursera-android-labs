@@ -28,7 +28,7 @@ public class DownloaderTaskFragment extends Fragment {
 		setRetainInstance(true);
 		
 		// TODO: Create new DownloaderTask that "downloads" data
-		DownloaderTask dTask = new DownloaderTask();
+		DownloaderTask downloaderTask = new DownloaderTask();
         
 		
 		// TODO: Retrieve arguments from DownloaderTaskFragment
